@@ -1,0 +1,12 @@
+<ul [ngSwitch]="person">
+    <li *ngSwitchCase="'abc'">abc</li>
+    <li *ngSwitchCase="'pqr'">pqr</li>
+    <li *ngSwitchCase="'sus'">sus</li>
+    <li *ngSwitchCase="'pd'">pd</li>
+    <li *ngSwitchDefault>please enter the right name</li>
+</ul>
+----------------
+export class AppComponent {
+  person="pcd";
+  
+ }
