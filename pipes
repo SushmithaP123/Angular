@@ -1,0 +1,14 @@
+pipes:
+<h1>{{'LOWERcase'| lowercase}}</h1>
+<h1>{{'LOWERcase'| uppercase}}</h1>
+<h1>{{'123' | currency}}</h1>
+<h1>{{dateEx | date}}</h1>
+<h1>{{1 | percent}}</h1>
+ 
+<!-- Paremetrized Pipes -->
+<h1>{{'123' | currency:'EUR'}}</h1>
+<h1>{{dateEx | date:'short'}}</h1>
+<h1>{{0.667 | percent:'2.1-1'}}</h1>
+ 
+<!-- chaining the pipes -->
+<h1>{{dateEx | date | uppercase}}</h1>
