@@ -1,0 +1,30 @@
+<h1>table is here</h1>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+    <tr *ngFor="let datas of data">
+        <td>{{datas.name}}</td>
+        <td>{{datas.age}}</td>
+    </tr>
+</table>
+------------
+export class AppComponent {
+  show="abc";
+ data=[
+   {
+     name:"abc",
+     age:30
+   },
+   {
+    name:"pqr",
+    age:44
+   },
+   {
+     name:"xyz",
+     age:50
+   }
+ ];
+  
+  }
