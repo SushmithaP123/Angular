@@ -1,0 +1,10 @@
+<input (keyup)="getVal(box.value)" #box/><br>
+<h1>{{dispVal}}</h1>
+----------
+export class AppComponent {
+ dispVal:String='';
+ getVal(val:any){
+   this.dispVal=val;
+   console.log(val);
+ }
+  }
