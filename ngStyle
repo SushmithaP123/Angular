@@ -1,0 +1,23 @@
+<h1 [ngStyle]="{'color':styleProp}">Table is Here</h1> or  
+ <h1 [ngStyle]="{'color':red}">Table is Here</h1> or 
+<h1 [ngStyle]="{'color':styleProp=='b'?'yellow':'red'}">Table is Here</h1>
+-------------
+export class AppComponent {
+  show="abc";
+  styleProp="violet";
+ data=[
+   {
+     name:"abc",
+     age:30
+   },
+   {
+    name:"pqr",
+    age:44
+   },
+   {
+     name:"xyz",
+     age:50
+   }
+ ];
+  
+ }
