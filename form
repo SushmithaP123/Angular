@@ -1,0 +1,14 @@
+<form action="" #loginForm ="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <input type="text" placeholder="Enter Name" name="name" ngModel required>
+    <br><br>
+    <input type="password" name="password" placeholder="Enter Password" ngModel minlength="5">
+    <br><br>
+    <button type="submit"[disabled]="!loginForm.valid">Login   </button>  <button type="reset">reset</button>
+</form>
+--------------
+export class AppComponent {
+  onSubmit(form:NgForm){
+    console.log(form.value);
+  }
+}
+
