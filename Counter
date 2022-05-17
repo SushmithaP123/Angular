@@ -1,0 +1,17 @@
+//in app.component.html
+<button (click)="counter('minus')">--</button>
+<p>count:{{Count}}</p>
+<button (click)="counter('add')">++</button>
+------------------------
+//in app.component.ts
+export class AppComponent {
+  Count:number=0;
+  counter(ops:String){
+    if(ops==='add'){
+      this.Count++;
+    }
+    else{
+      this.Count--;
+    }
+  }
+}
