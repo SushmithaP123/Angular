@@ -1,0 +1,24 @@
+<h1 *ngIf="show else elseBlock">If</h1>
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template>
+<h2>hello</h2>
+-------------
+export class AppComponent {
+  show=true;
+  
+  
+ }
+ 
+ 
+ <h1 *ngIf="show=='abc' else elseBlock">If</h1>
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template>
+<h2>hello</h2>
+--------------
+export class AppComponent {
+  show="abc";
+  
+  
+ }
