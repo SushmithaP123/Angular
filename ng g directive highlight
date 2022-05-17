@@ -1,0 +1,17 @@
+create ng g directive highlight:
+in highlight.directive.ts:
+
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+
+  constructor(private el:ElementRef) {
+    el.nativeElement.style.color="blue";
+   }
+
+}
+-----------------
+<h1 appHighlight>hello world</h1>
